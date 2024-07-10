@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is Eclipse Metro/2.4.8 (RELEASE-2.4.8-e044505; 2022-01-04T13:29:23+0000) JAXWS-RI/2.3.5 JAXWS-API/2.3.3 JAXB-RI/2.3.5 JAXB-API/2.3.3 git-revision#e044505. --><xs:schema xmlns:tns="http://negocio.pds.info.sc.ifrn.edu.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://negocio.pds.info.sc.ifrn.edu.br/">
+
+<xs:element name="inserirFilme" type="tns:inserirFilme"/>
+
+<xs:element name="inserirFilmeResponse" type="tns:inserirFilmeResponse"/>
+
+<xs:element name="listarFilmes" type="tns:listarFilmes"/>
+
+<xs:element name="listarFilmesResponse" type="tns:listarFilmesResponse"/>
+
+<xs:complexType name="listarFilmes">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarFilmesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:filme" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="filme">
+<xs:sequence>
+<xs:element name="ano" type="xs:int"/>
+<xs:element name="avaliacao" type="xs:double"/>
+<xs:element name="duracaoMinutos" type="xs:int"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="titulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inserirFilme">
+<xs:sequence>
+<xs:element name="novoFilme" type="tns:filme" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inserirFilmeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

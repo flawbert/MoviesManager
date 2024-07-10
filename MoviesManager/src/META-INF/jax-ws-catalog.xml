@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.161.1.31:8080/ServidorFilmes/FilmeWS?wsdl" uri="wsdl/10.161.1.31_8080/ServidorFilmes/FilmeWS.wsdl"/>
+    <system systemId="http://10.161.1.31:8080/ServidorFilmes/FilmeWS?xsd=1" uri="wsdl/10.161.1.31_8080/ServidorFilmes/FilmeWS.xsd_1.xsd"/>
+</catalog>
